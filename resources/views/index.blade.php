@@ -23,7 +23,7 @@
                                         <th>Address</th>
                                         <th>Mobile</th>
                                         <th>Actions</th>
-                                    </tr>4
+                                    </tr>
                                 </thead>
                                 <tbody>
                                 @foreach($students as $item)
