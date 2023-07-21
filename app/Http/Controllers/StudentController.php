@@ -35,7 +35,7 @@ class StudentController extends Controller
         $student->address=$request->name;
         $student->mobile=$request->name;
         $student->save();
-        return redirect('/student')->with('flash_message', 'Student Addedd!');
+        return redirect('/')->with('flash_message', 'Student Addedd!');
     }
     public function show(string $id): View
     {
@@ -57,7 +57,7 @@ class StudentController extends Controller
     
     public function destroy(string $id): RedirectResponse
     {
-        Student::destroy($id);
-        return redirect('student')->with('flash_message', 'Student deleted!'); 
+        StudentModel::destroy($id);
+        return redirect('/')->with('flash_message', 'Student deleted!'); 
     }
 }

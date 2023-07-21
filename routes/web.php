@@ -25,3 +25,4 @@ use App\Http\Controllers\StudentController;
 Route::post('/student/create', [StudentController::class, 'store']);
 Route::get('/', [StudentController::class, 'index']);
 Route::get('/student/create', [StudentController::class, 'create']);
+Route::POST('/delete/{id}/', [StudentController::class, 'destroy']);
