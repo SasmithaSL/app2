@@ -8,13 +8,12 @@ use App\Models\StudentModel;
 use Illuminate\View\View;
 class StudentController extends Controller
 {
-    public function test(){
-        dd('sss');
-    }
+  
     public function index(): View
     { 
         // dd('gg');
         $students = StudentModel::all();
+        // dd($students);
         return view ('index')->with('students', $students);
     }
  
@@ -25,15 +24,12 @@ class StudentController extends Controller
   
     public function store(Request $request): RedirectResponse
     {
-        // dd('ss');
         
-        // $input = $request->all();
-        // Student::create($input);
 
         $student = new StudentModel();
         $student->name=$request->name;
-        $student->address=$request->name;
-        $student->mobile=$request->name;
+        $student->address=$request->address;
+        $student->mobile=$request->mobile;
         $student->save();
         return redirect('/')->with('flash_message', 'Student Addedd!');
     }
