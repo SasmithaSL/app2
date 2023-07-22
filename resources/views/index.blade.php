@@ -1,4 +1,4 @@
-{{-- @extends('layout')
+@extends('layout')
 @section('content')
     <div class="container">
         <div class="row">
@@ -57,64 +57,4 @@
             </div>
         </div>
     </div>
-@endsection --}}
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Hi lassana lamayo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f8f8f8;
-      margin: 50px;
-    }
-
-    h1 {
-      color: #e91e63;
-    }
-
-    p {
-      color: #555;
-      font-size: 18px;
-    }
-
-    #loveNote {
-      color: #ff5722;
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 30px;
-    }
-
-    #heart {
-      color: #e91e63;
-      font-size: 30px;
-      animation: heartbeat 1s infinite;
-    }
-
-    @keyframes heartbeat {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.2);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-  </style>
-</head>
-<body>
-  <h1>For My Lassana lamaya!</h1>
-  <p>Hi My Dear lassana lamayoo ,</p>
-  <p>I just wanted to take a moment to let you know how special you are to me.</p>
-  <p>Your smile brightens up my darkest days, and your laughter is like music to my ears.</p>
-  <p>Being with you is like living in a dream, and I'm grateful for every moment we spend together.</p>
-  <p>So here's a little <span id="loveNote">"I love you"</span> and a big <span id="heart">❤</span> just for you!</p>
-  <p>Love always,<br>[Sas]</p>
-</body>
-</html>
+@endsection
