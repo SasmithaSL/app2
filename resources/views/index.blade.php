@@ -1,4 +1,4 @@
-@extends('layout')
+ @extends('layout')
 @section('content')
     <div class="container">
         <div class="row">
@@ -9,7 +9,7 @@
                         <h2>Laravel Test 01</h2>
                     </div>
                     <div class="card-body">
-                        <a href="{{ url('/student/create') }}" class="btn btn-success btn-sm" title="+Add New Student">
+                        <a href="/student/create" class="btn btn-success btn-sm" title="+Add New Student">
                             <i class="fa fa-plus" aria-hidden="true"></i> +Add New
                         </a>
                         <br/>
@@ -57,4 +57,9 @@
             </div>
         </div>
     </div>
-@endsection
+@endsection 
+
+
+
+
+
