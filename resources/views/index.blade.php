@@ -6,10 +6,10 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Laravel Test 01ijij</h2>
+                        <h2>Laravel Test 01</h2>
                     </div>
                     <div class="card-body">
-                        <a href="student/create" class="btn btn-success btn-sm" title="+Add New Student">
+                        <a href="{{ url('/student/create') }}" class="btn btn-success btn-sm" title="+Add New Student">
                             <i class="fa fa-plus" aria-hidden="true"></i> +Add New
                         </a>
                         <br/>
